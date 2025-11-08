@@ -11,7 +11,7 @@ misp_verifycert = False
 
 # OpenSearch Configuration
 opensearch_host = 'https://192.168.64.5:9200'
-opensearch_auth = ('admin', 'Strongpassword@1234')
+opensearch_auth = ('admin', '....')
 log_indexes = ['windows-logs*', 'linux-logs*', 'firewall-logs*']  
 threat_index = 'misp-threat-matches' 
 output_file = 'threat_matches.log'  
@@ -177,4 +177,5 @@ def main():
             time.sleep(60)  # Wait before retrying on error
 
 if __name__ == "__main__":
+
     main()
